@@ -15,23 +15,15 @@ space and traversing the stream sequentially O(1) times.
 
 Sample Input:
 		[3 4 1 4 1]
-
 Sample Output:
 		1
-
 If there are multiple possible answers ( like in the sample case above ), output any one.
-
 If there is no duplicate, output -1
-
-
-
 */
-
 //Solution is Starts here..
 
-
 int Solution::repeatedNumber(const vector<int> &A) {
-     int i,n=A.size();   //storing size of given vector in variable n
+     int i,n=A.size();  	 //storing size of given vector in variable n
     vector<bool>b(n,false);	//creating a boolean vector 'b' and initializing it to false
     for(i=0;i<n;i++)		//Looping over vector 'b' 
     {
@@ -47,6 +39,5 @@ int Solution::repeatedNumber(const vector<int> &A) {
  
     return -1;			//if there is no duplicate in given vector,returning "-1"
 }
-
 
 //Solution Ends here..
